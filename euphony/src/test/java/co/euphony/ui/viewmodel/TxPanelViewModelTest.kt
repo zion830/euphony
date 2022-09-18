@@ -34,13 +34,4 @@ class TxPanelViewModelTest {
         viewModel.onBtnClick("")
         assertTrue(viewModel.isProcessing.value)
     }
-
-    @Test
-    fun `if stop() is called, isProcessing becomes false`() {
-        viewModel.onBtnClick("")
-        assertTrue(viewModel.isProcessing.value)
-
-        viewModel.stop()
-        assertFalse(viewModel.isProcessing.value)
-    }
 }
